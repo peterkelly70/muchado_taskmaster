@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4169e1;
+    color: #fff;
+    padding: 0.625em 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    position: sticky;
+    top: 3.75em; /* Adjust this value based on the height of your header */
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 0.625em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 1.25em;
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+.login-box {
+    max-width: 10em; /* Adjust this value to your desired width */
+    margin: 0 auto; /* Center the box */
+    padding: 1em;
+}
+
+.login-box fieldset {
+    border: none;
+}
+
+.toggle-password {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 1.875em; 
+    height: 1.875em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-password:hover {
+    border: 0.0625em solid black;
+    background: none;
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.625em;
+}
+
+.user-box label {
+    width: 10em; /* Adjust this value to fit your longest label */
+    text-align: left;
+    margin-right: 0.625em;
+}
+
+.user-box input {
+    width: 12.5em; /* Adjust this value to your desired input box width */
+    padding: 0.625em;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    display: inline-block;
+    width: 48%; /* Adjust as needed */
+    padding: 0.625em;
+    background-color: #4169e1;
+    color: #fff;
+    border: 0.125em solid #fff; /* Add a white border */
+    cursor: pointer;
+    box-sizing: border-box; /* Include border and padding in button's total width and height */
+}
+
+button:hover {
+    background-color: #3151b7;
+}
+
+.register-button {
+    background-color: #4169e1;
+    color: #fff;
+}
+
+.cancel-button {
+    background-color: #fff;
+    color: #4169e1;
+    border: 0.125em solid #4169e1;
+}
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    border-bottom: none;
+    margin-bottom: 0; /* Remove the white bar */
+    background: #c9b89b; /* Lighter manila folder color */
+    color: #000;
+}
+
+.tabs button {
+    flex-grow: 1; /* Make the tabs full width */
+    background: #b8a88b; /* Darkened manila folder color */
+    color: #000;
+    border: none;
+    padding: 0.625em; /* 10px -> 0.625em */
+    margin: 0; /* Remove margin */
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-bottom: 0.0625em solid #000; /* 1px -> 0.0625em */
+}
+
+.tabs button h2 {
+    margin: 0; /* Remove default margin */
+}
+
+.tab-content {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.25em; /* 20px -> 1.25em */
+    background: #c9b89b; /* Lighter manila folder color */
+    color: #000; 
+    border: none; /* Remove border from content */
+}
+
+.tabs button.active {
+    background: #c9b89b; /* Lighter manila folder color */
+    border-bottom: none; /* Remove border from active tab */
+    border-top: 0.0625em solid #000; /* 1px -> 0.0625em */
+    border-left: 0.0625em solid #000; /* 1px -> 0.0625em */
+    border-right: 0.0625em solid #000; /* 1px -> 0.0625em */
+}
+
+.tabs button:hover {
+    background: #a7977b; /* Further darkened manila folder color */
+}
+
+.error {
+    color: #B91C1C;
+    background-color: #FEE2E2;
+    border: 1px solid #B91C1C;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center; /* Center the text */
+}
+
+.error p {
+    list-style-type: none; /* Remove the bullet point */
+}
+
+.error:empty {
+    display: none; /* Hide the error div if it's empty */
+}
+
+
+
+
+footer {
+    background-color: #4169e1;
+    color: #fff;
+    text-align: center;
+    padding: 0.625em 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
